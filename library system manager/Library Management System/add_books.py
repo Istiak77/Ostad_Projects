@@ -5,10 +5,8 @@ from datetime import datetime
 def add_books(all_books):
     title = input("Enter Book Title: ")
     author = input("Enter Author Name: ")
-    # isbn = int(input("Enter ISBN Number: "))
     year = int(input("Enter Publishing Year Number: "))
     price = int(input("Enter Book Price: "))
-
 
     while True:
         try:
@@ -17,9 +15,8 @@ def add_books(all_books):
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
 
-
     isbn = random.randint(10000, 99999)
-    bookAddedAt = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    book_added_at = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     
     book = {
         "title": title,
@@ -28,14 +25,13 @@ def add_books(all_books):
         "year": year,
         "price": price,
         "quantity": quantity,
-        "bookAddedAt": bookAddedAt,
+        "bookAddedAt": book_added_at,
         "bookLastUpdatedAt": ""
     }
     
     all_books.append(book)
     save_all_books(all_books)
     
-    print("Books Added Successully")
+    print("Books Added Successfully")
     
     return all_books
-    
