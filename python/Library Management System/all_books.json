@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K Rowling",
+        "isbn": 95967,
+        "year": 1997,
+        "price": 200,
+        "quantity": 5,
+        "bookAddedAt": "13-12-2024 17:01:55",
+        "bookLastUpdatedAt": "13-12-2024 17:03:03"
+    }
+]
