@@ -1,92 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <table width="100%">
-        <!-- Row 1 -->
-        <tr>
-            <!-- Row 1 Column 1 -->
-            <td align="left">
-                <img src="profile.jpg" width="100px" height="100px" alt="Profile Picture">
-            </td>
+    <!-- Navbar -->
+    <nav>
+        <div class="left">
+            <a href="/">Welcome</a>
+        </div>
 
-            <!-- Row 1 Column 2 -->
-            <td>
-                <b><font size="6">Istiak Ahamod</font></b>
-                <br>
-                <i><font size="4">Full Stack Web Developer</font></i>
-            </td>
-        </tr>
+        <div class="right">
+            <a href="#" class="active">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
 
-        <!-- Row 2 -->
-        <tr>            
-            <td colspan="2">
-                <hr>
-            </td>
-        </tr>
+            <a href="#">
+                <i class="fa-solid fa-pen"></i>
+                <span>Projects</span>
+            </a>
 
-        <!-- Row 3 -->
-        <tr>
-            <!-- Row 3 Column 1 -->
-            <td width="25%">
-                <h3>CONTACT</h3>
-                pranto786.ia@gmail.com <br>
-                +88 01752499453 <br>
-                Dhaka, Bangladesh <br>
-                <a href="https://www.linkedin.com/in/istiak-ahamod-6a4a812a8/" target="_blank">LinkedIn</a><br>
-                <a href="https://www.github.com/Istiak77" target="_blank">GitHub</a>
+            <a href="#">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
 
-                <h3>EDUCATION</h3>
-                <b>Bachelor of Science</b><br>
-                CSE,AIUB<br>
-                2023 - Present<br>
-                
-                <h3>SKILLS</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </td>
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Istiak.</h2>
+                <p>I’m a full-stack web developer with a passion for Linux. I specialize in both front-end and back-end development, working with technologies like MERN and Django.</p>
+
+                <div class="links">
+                    <a href="https://github.com/Istiak77" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/istiak-ahamod-6a4a812a8" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:ahmedpranto666@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/profile.jpg"profile">
+            </div>
+        </section>
+
+        <!-- Skills section -->
+         <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I have expertise in technologies like MERN, Django, MySQL. I specialize in building end-to-end solutions, handling both the front-end and back-end. With a strong foundation in databases and frameworks, I’m skilled in creating dynamic, data-driven applications and seamless user experiences. I’m also a Linux enthusiast, optimizing development environments and workflows for efficiency.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
             
-            <!-- Row 3 Column 2 -->
-            <td valign="top">
-                <h3>WORK EXPERIENCE</h3>
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+            
+                <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="js logo">
+                    <span>Javascript</span>
+                </div>
+            
+                <div class="cell">
+                    <img src="images/react-logo.webp" alt="react logo">
+                    <span>ReactJS</span>
+                </div>
 
-                <b>Junior Software Engineer</b><br>
-                ABC Software Ltd., Dhaka, Bangladesh<br>
-                2024 - Present<br>
-                <ul>
-                    <li>Developed and maintained RESTful APIs using Django REST framework.</li>
-                    <li>Implemented responsive web designs using HTML5, CSS3, and JavaScript.</li>
-                    <li>Reviewed codes to improve code quality and maintainability.</li>
-                </ul>
+                <div class="cell">
+                    <img src="images/django-logo.png" alt="django logo">
+                    <span>Django</span>
+                </div>
+            </div>
+         </section>
 
-                <h3>PROJECTS</h3>
+         <!--Showcase Section-->
+            <section class="showcase">
 
-                <b>Task Management System</b>
-                <ul>
-                    <li>Developed a task management system with Python and Django</li>
-                    <li>Designed frontend usign HTML & CSS</li>
-                    <li>Implemented interactive dashboard using JS</li>
-                </ul>
-                
-                
-                <b>Task Management System 2</b>
-                <ul>
-                    <li>Developed a task management system with Python and Django</li>
-                    <li>Designed frontend usign HTML & CSS</li>
-                    <li>Implemented interactive dashboard using JS</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+                <h2>Some of My Projects</h2>
+
+                <div class = "blocks">
+                    <div class="block">
+                        <a href="https://github.com/Istiak77/Ostad_Projects/tree/master/python/Library%20Management%20System" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Library Management System</span>
+                    </div>
+
+                    <div class="block"></a>
+                        <a href="https://github.com/Istiak77/Ostad_Projects/tree/master/python/phonebook" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Phonebook</span>
+                        </a>
+                    </div>
+                    
+                    <div class="block"></a>
+                        <a href="https://github.com/Istiak77/Python_Practices/tree/main/alarm" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Alarm Clock</span>
+                        </a>
+                    </div>
+
+                    </div>
+            </section>
+
+          <!-- Contact section -->
+          <section class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    If you would like to hire me you can contact with me through the site.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+          </section>
+
+          <footer>
+            <p>&copy; 2025 My Portfolio. All Rights Reserved</p>
+          </footer>
+
+         
+    </main>
 </body>
-</html>

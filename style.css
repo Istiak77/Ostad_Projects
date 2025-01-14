@@ -1,0 +1,336 @@
+:root {
+    --text-color:#eeeff1;
+    --link-color: #4a76ee;
+    --background-color: #1a1c20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/* Navbar section */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+nav .left a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transition: width 0.3s ease;
+}
+
+nav .left a:hover::after {
+    width: 100%;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav .right a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transition: width 0.3s ease;
+}
+
+nav .right a:hover::after {
+    width: 100%;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-size: 45px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.hero-section .headshot {
+    flex: 3;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7); 
+    animation: auraGlow 2s ease-in-out infinite alternate; 
+}
+
+
+@keyframes auraGlow {
+    0% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 50px 25px rgba(255, 255, 255, 0.8); 
+    }
+}
+
+/* Skills section */
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    font-size: 35px;
+    text-align: left;
+}
+
+.skills-section .text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+
+/* ShowCase */
+.showcase { padding: 0 50px;
+    margin-bottom: 100px;}
+
+
+.showcase h2 {
+        font-size: 2em;
+        color: #ffffff;
+        margin-bottom: 20px;
+}
+    
+.blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 0;
+}
+    
+.block {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        width: 85%;
+        max-width: 270px;
+        text-align: left;
+        transition: transform 0.2s, box-shadow 0.2s;
+}
+    
+.block:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+    
+.block a {
+        text-decoration: none;
+        color: #1e90ff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 1em;
+}
+    
+.block a:hover {
+        color: #63b8ff;
+}
+    
+.block i {
+        font-size: 1.3em;
+        color: #9e9e9e;
+}
+    
+.block span {
+        font-weight: bold;
+}
+
+.blocks .block {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Contact section */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: -45px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    color: #eeeff1;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--link-color);
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+}
+
+.contact-section .group form button:hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform: translateY(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
